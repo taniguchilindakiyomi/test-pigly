@@ -39,7 +39,8 @@ php artisan storage:link
 ・Laravel8.83.8  
 ・MySQL8.0.26  
 ## ER図
-< - - - 作成したER図の画像 - - - >
+< - - - 作成したER図の画像 - - - >  
+![ER図](/.png)
 
 ## URL
 ・開発環境：http://localhost/  
