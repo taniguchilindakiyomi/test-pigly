@@ -206,11 +206,13 @@ class PiglyController extends Controller
         ]);
     }
 
-    public function edit($id)
+    
+    
+    public function edit($weightLogId)
     {
-        $log = WeightLog::findOrFail($id);
-        
-        return view('weight_logs.show', compact('log'));
+        $log = WeightLog::findOrFail($weightLogId);
+
+        return view('weight_logs.edit', compact('log'));
     }
 
     public function destroy(Request $request)

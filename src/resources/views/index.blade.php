@@ -168,7 +168,7 @@
                         <td>{{ number_format($log->calories, 0) }}cal</td>
                         <td>{{ \Carbon\Carbon::parse($log->exercise_time)->format('H:i') }}</td>
                         <td>
-                            <a class="btn btn-sm btn-outline-secondary" href="{{ route('weight_logs.destroy', ['weightLogId' => $log->id]) }}" alt="えんぴつ">編集</a>
+                            <a class="btn btn-sm btn-outline-secondary" href="/weight_logs/{weightLogId}" alt="えんぴつ">編集</a>
                         </td>
                     </tr>
                     @endforeach

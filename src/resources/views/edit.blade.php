@@ -11,7 +11,7 @@
     <main>
         <div class="container">
     <h1>体重ログ編集</h1>
-    <form action="{{ route('weight_logs.update', ['id' => $log->id]) }}" method="POST">
+    <form action="/weight_logs/{weightLogId}/update" method="POST">
         @csrf
         @method('PUT')
         
@@ -38,7 +38,7 @@
         <a href="/weight_logs" class="goal-setting-back">戻る</a>
         <button type="submit" class="btn btn-primary">更新する</button>
     </form>
-    <form class="delete-form" action="" method="POST">
+    <form class="delete-form" action="/weight_logs/{weightLogId}/delete" method="POST">
         @csrf
         @method('DELETE')
         <button class="btn btn-danger" type="submit">削除</button>
